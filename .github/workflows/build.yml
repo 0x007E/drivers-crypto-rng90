@@ -8,11 +8,11 @@ on:
     branches:
     - main
 
+env:
+  OUTPUT_FOLDER: "./output"
+
 jobs:
   pack-library:
-    env:
-      OUTPUT_FOLDER: "./output"
-      FILENAME: "library"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository for deployment
@@ -79,11 +79,6 @@ jobs:
           mkdir -p ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/rng90
           cp ./rng90.c ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/rng90/
           cp ./rng90.h ./${{ env.OUTPUT_FOLDER }}/drivers/crypto/rng90/
- 
-      - name: Pack files for upload
-        run: |
-          tar -czvf build.tar.gz ${{ env.OUTPUT_FOLDER }}
-          zip -r build.zip ${{ env.OUTPUT_FOLDER }}
 
       - name: Upload library package
         uses: actions/upload-artifact@v4
