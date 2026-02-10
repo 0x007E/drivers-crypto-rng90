@@ -49,7 +49,7 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 ### Using with `git clone`
 
-``` bash
+```sh
 mkdir -p ./drivers/crypto/
 git clone https://github.com/0x007E/drivers-crypto-rng90.git ./drivers/crypto/
 mv ./drivers/crypto/drivers-crypto-rng90 ./drivers/crypto/rng90
@@ -76,7 +76,7 @@ mv ./utils/utils-systick ./utils/systick
 
 ### Using as `git submodule`
 
-``` bash
+```sh
 git submodule add https://github.com/0x007E/drivers-crypto-rng90.git  drivers/crypto/rng90
 git submodule add https://github.com/0x007E/hal-common.git            hal/common
 
@@ -92,7 +92,7 @@ git submodule add https://github.com/0x007E/utils-systick.git         utils/syst
 
 ## Programming
 
-``` c
+```c
 #include "../hal/PLATFORM/twi/twi.h"
 
 #include "../lib/drivers/crypto/rng90/rng90.h"
