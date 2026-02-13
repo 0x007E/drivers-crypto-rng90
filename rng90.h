@@ -19,17 +19,6 @@
 #ifndef RNG90_H_
 #define RNG90_H_
 
-	#ifndef F_CPU
-        /**
-         * @def F_CPU
-         * @brief System clock frequency definition.
-         *
-         * @details
-         * This macro defines the operating frequency of the microcontroller's clock in Hertz. It is used by delay functions and timing calculations. The value should match the actual hardware clock frequency to ensure correct timing behavior in the software.
-         */
-        #define F_CPU 20000000UL
-    #endif
-
 	#ifndef RNG90_HAL_PLATFORM
 		/**
          * @def OLED_HAL_PLATFORM
