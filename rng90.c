@@ -14,7 +14,7 @@
  * 
  * @note This file is part of a larger project and subject to the license specified in the repository. For updates and the complete revision history, see the GitHub repository.
  * 
- * @see https://github.com/0x007e/driver-crypto-rng90 "RNG90 crypto driver library"
+ * @see https://github.com/0x007e/drivers-crypto-rng90 "RNG90 crypto driver library"
  */
 
 #include "rng90.h"
